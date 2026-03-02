@@ -1,0 +1,438 @@
+/*! Mise en place */
+header{
+    display: block;
+    justify-content: space-around;
+    margin-left: 250px;
+
+    text-align: center;
+}
+body{
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap : 32px;
+    grid-column-gap : 32px;
+
+    background-color: white;
+
+    font-size: 16px;
+
+    padding: 4rem;
+
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.btn__container,.carte__container
+{
+    width: 100%;
+    height: 100%;
+
+    background-color: #efefef;
+    border-radius: 10px;
+
+    box-shadow: 1px 0px 2px 0px #00000073;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+/*! ------------- */
+
+/* ========= Buttons ========= */
+
+.button--primary{
+    all:unset;
+    color: white;
+    background-color: #155dfc;
+    border-radius: 8px;
+    
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+    transition: background-color 200ms ease;
+}
+
+/* Effet d'hover (survole) */
+
+.button--primary:hover{
+    background-color: #1dfc15;
+}
+
+/* Effet de focus (clic) */
+.button--primary:focus{
+    background-color: #f4fc15;
+}
+
+.button--secondary{
+    all:unset;
+
+    color: #155dfc;
+    border: #155dfc 2px solid;
+    border-radius: 8px;
+    
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+
+    transition: all 200ms ease;
+}
+
+/* effet d'hover */
+.button--secondary:hover{
+    background-color: #155dfc;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px 1px #48484876;
+}
+
+/* effet de focus */
+.button--secondary:focus{
+    background-color: hsl(221, 97%, 24%);
+    color: #ffffff;
+    box-shadow: 0px 2px 4px 1px #48484876;
+}
+
+
+
+.button--destructive{
+    font-size: 16px;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    border: 0;
+    padding-inline: 32px;
+    padding-block:16px;
+    display: flex;
+    flex-direction: row;
+    gap : 8px;
+    justify-content: center;
+}
+
+.button--destructive img{
+    filter: brightness(100);
+
+}
+
+
+.button--success{
+    all:unset;
+
+    background-color: #22bf2a;
+    color: #ffffff;
+    /* border: #155dfc 2px solid; */
+    border-radius: 8px;
+    
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+    transition: transform 1s ease-in-out;
+}
+
+.btn__container:hover .button--success{
+    transform: rotate(1440deg)
+}
+
+.button--download{
+    font-size: 16px;
+    background-color: rgb(143, 24, 176);
+    border-radius: 8px;
+    color: white;
+    border: 0;
+    padding-inline: 32px;
+    padding-block:16px;
+    display: flex;
+    flex-direction: row;
+    gap : 8px;
+    justify-content: center;
+}
+
+.button--download img{
+    filter: brightness(100);
+    transition: transform 200ms ease;
+
+}
+
+.button--download:hover img{
+    transform: translateX(-10px);
+}
+
+
+.button--ghost{
+    all:unset;
+
+    /* color: #155dfc; */
+    /* border: #155dfc 2px solid; */
+    border-radius: 8px;
+    
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    
+    padding-inline: 2rem;
+    padding-block: 1rem;
+
+    transition: 
+    background-color 0.25s ease-in,
+    color 0.25s ease-in
+    ;
+}
+
+.button--ghost:hover{
+    background-color: #484848;
+    color: #efefef;
+
+}
+
+/*! =========================== */
+
+/* ========= Cartes ========= */
+
+
+.card{
+    /* border: #484848 solid 2px; */
+    border-radius: 10px;
+    min-width: 300px;
+    overflow: hidden;
+
+    box-shadow: 2px 1px 4px 1px #48484876;
+}
+
+.card__image{
+    height: 200px;
+    background-image: url("./image/Image-headphone.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card__infoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+    background-color: #ffffff;
+
+    padding-inline: 14px ;
+    padding-block: 16px ;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 8px
+}
+
+.card__title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card__description{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card__price{
+    font-size: 24px;
+    font-weight: 500;
+    color: #155DFC
+}
+
+.card__infoContainer button{
+    all:unset;
+    background-color: #155DFC;
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    padding-inline: 16px;
+    padding-block: 8px;
+
+}
+
+/*! =========================== */
+
+/* ========= Product Cards Grid ========= */
+
+.products-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.product-card__image {
+    position: relative;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+}
+
+/* Badges */
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge--promo {
+    background-color: #e53935;
+    color: #ffffff;
+}
+
+.badge--bestseller {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.badge--nouveau {
+    background-color: #43a047;
+    color: #ffffff;
+}
+
+.badge--exclusif {
+    background-color: #ffc107;
+    color: #333333;
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+    background-color: #ffe5e5;
+    color: #e53935;
+}
+
+/* Product Info */
+.product-card__info {
+    padding: 16px;
+}
+
+.product-card__category {
+    font-size: 11px;
+    font-weight: 600;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-card__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    margin: 8px 0;
+}
+
+.product-card__price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.price-current {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.price-old {
+    font-size: 14px;
+    color: #999999;
+    text-decoration: line-through;
+}
+
+.price-discount {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e53935;
+    background-color: #ffebee;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+#page_4{
+    display: flex;
+    justify-content: center;
+    margin: 0px 250px;
+}
+#contact textarea{
+    background-color: white;
+    color: grey;
+    width: 200px;
+    height: 20px;
+    
+}
+#inscription{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content : flex-end;
+}
+nav ul a {
+
+}
+/*! =========================== */
+ 
