@@ -414,5 +414,16 @@ body{
     border-radius: 4px;
 }
 
+#contact textarea{
+    background-color: white;
+    color: grey;
+    width: 200px;
+    height: 20px;
+
+}
+.inscription{
+    background-color: black;
+    color: white;
+}
 /*! =========================== */
  
