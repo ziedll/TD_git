@@ -3,61 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUXE - Louis Vuitton</title>
+    <title>Luxe - Louis Vuitton</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">LUXE</div>
-            <ul class="nav-links">
-                <li><a href="#">Femme</a></li>
-                <li><a href="#">Homme</a></li>
-                <li><a href="#">Accessoires</a></li>
-                <li><a href="#">Nouveautés</a></li>
-            </ul>
-            <div class="nav-icons">
-                <span class="search-icon">🔍</span>
-                <div class="cart-icon">
-                    🛒 <span class="badge">3</span>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <section class="hero-section">
+        <div class="dark-overlay"></div>
+        <header>
+            <nav>
+                <div class="logo">LUXE</div>
+                <ul class="nav-menu">
+                    <li>Femme</li><li>Homme</li><li>Accessoires</li><li>Nouveautés</li>
+                </ul>
+                <div class="nav-tools">🔍 🛒 <span class="badge">3</span></div>
+            </nav>
+        </header>
 
-    <main class="hero-section">
         <div class="hero-content">
-            <p class="subtitle">COLLECTION PRINTEMPS 2026</p>
-            <h1>Le Style, <br> <span class="italic">Réinventé</span></h1>
-            <p class="description">
-                Découvrez notre nouvelle collection exclusive. Des <br> 
-                pièces intemporelles pour un style raffiné au quotidien.
-            </p>
-            
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-white">EXPLORER LA COLLECTION</a>
-                <a href="#" class="btn btn-outline">NOUVEAUTÉS</a>
-            </div>
-
-            <div class="stats">
-                <div class="stat-item">
-                    <h3>2K+</h3>
-                    <p>PRODUITS</p>
-                </div>
-                <div class="stat-item">
-                    <h3>98%</h3>
-                    <p>SATISFACTION</p>
-                </div>
-                <div class="stat-item">
-                    <h3>50+</h3>
-                    <p>MARQUES</p>
-                </div>
+            <p class="tagline">COLLECTION PRINTEMPS 2026</p>
+            <h1>Le Style, <br><span class="italic">Réinventé</span></h1>
+            <p class="desc">Découvrez notre nouvelle collection exclusive. Des pièces intemporelles.</p>
+            <div class="cta">
+                <button class="btn-white">EXPLORER LA COLLECTION</button>
+                <button class="btn-outline">NOUVEAUTÉS</button>
             </div>
         </div>
-        
-        <div class="scroll-down">DÉFILER</div>
-    </main>
+    </section>
+
+    <section class="services-bar">
+        <div class="service-item">
+            <span>📦</span>
+            <h3>Livraison gratuite</h3>
+            <p>Dès 100 € d'achat</p>
+        </div>
+        <div class="service-item">
+            <span>✔️</span>
+            <h3>Retours faciles</h3>
+            <p>30 jours pour changer d'avis</p>
+        </div>
+        <div class="service-item">
+            <span>🔒</span>
+            <h3>Paiement sécurisé</h3>
+            <p>Données protégées</p>
+        </div>
+        <div class="service-item">
+            <span>🎧</span>
+            <h3>Support 24/7</h3>
+            <p>À votre écoute</p>
+        </div>
+    </section>
 
 </body>
 </html>
