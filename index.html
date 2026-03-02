@@ -3,22 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>Notre selection</header>
+    <header>Notre selection
     <h1>Produits en Vedette</h1>
     <h2>Des pièces soigneusement sélectionnés pour vous offrir le  meilleur du style contemporain</h2>
     <nav>
-        <a href="">Tous</a>
-        <a href="">Chaussures</a>
-        <a href="">Accessoires</a>
-        <a href="">Montres</a>
-        <a href="">Beauté</a>
-        <a href="">Vêtements</a>
+        <ul>
+            <a href="#">Tous</a>
+            <a href="#">Chaussures</a>
+            <a href="#">Accessoires</a>
+            <a href="#">Montres</a>
+            <a href="#">Beauté</a>
+            <a href="#">Vêtements</a>
+        </ul>
     </nav>
-    <section>
+</header>
+    <section class="products-grid">
+        <article class="product-card">
+            <div class="product-card__image" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400');">
+                <span class="badge badge--promo">PROMO</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card__info">
+                <span class="product-card__category">CHAUSSURES</span>
+                <h3 class="product-card__title">Sneakers Air Edition</h3>
+                <div class="product-card__price">
+                    <span class="price-current">189 €</span>
+                    <span class="price-old">240 €</span>
+                    <span class="price-discount">-34%</span>
+                </div>
+            </div>
+        </article>
 
+        <!-- Card 2: Sac Cuir Milano -->
+        <article class="product-card">
+            <div class="product-card__image" style="background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400');">
+                <span class="badge badge--bestseller">BEST-SELLER</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card__info">
+                <span class="product-card__category">ACCESSOIRES</span>
+                <h3 class="product-card__title">Sac Cuir Milano</h3>
+                <div class="product-card__price">
+                    <span class="price-current">320 €</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Card 3: Lunettes Riviera -->
+        <article class="product-card">
+            <div class="product-card__image" style="background-image: url('https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400');">
+                <span class="badge badge--nouveau">NOUVEAU</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card__info">
+                <span class="product-card__category">ACCESSOIRES</span>
+                <h3 class="product-card__title">Lunettes Riviera</h3>
+                <div class="product-card__price">
+                    <span class="price-current">145 €</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Card 4: Montre Chronos -->
+        <article class="product-card">
+            <div class="product-card__image" style="background-image: url('https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400');">
+                <span class="badge badge--promo">PROMO</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card__info">
+                <span class="product-card__category">MONTRES</span>
+                <h3 class="product-card__title">Montre Chronos</h3>
+                <div class="product-card__price">
+                    <span class="price-current">590 €</span>
+                    <span class="price-old">700 €</span>
+                    <span class="price-discount">-18%</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Card 5: Parfum Éclat d'Or -->
+        <article class="product-card">
+            <div class="product-card__image" style="background-image: url('https://images.unsplash.com/photo-1541643600914-78b084683601?w=400');">
+                <span class="badge badge--exclusif">EXCLUSIF</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card__info">
+                <span class="product-card__category">BEAUTÉ</span>
+                <h3 class="product-card__title">Parfum Éclat d'Or</h3>
+                <div class="product-card__price">
+                    <span class="price-current">98 €</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Card 6: Veste Urban Street -->
+        <article class="product-card">
+            <div class="product-card__image" style="background-image: url('https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400');">
+                <span class="badge badge--promo">PROMO</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="product-card__info">
+                <span class="product-card__category">VÊTEMENTS</span>
+                <h3 class="product-card__title">Veste Urban Street</h3>
+                <div class="product-card__price">
+                    <span class="price-current">275 €</span>
+                    <span class="price-old">350 €</span>
+                    <span class="price-discount">-21%</span>
+                </div>
+            </div>
+        </article>
     </section>
 </body>
 </html>
